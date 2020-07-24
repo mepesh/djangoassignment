@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<p><a href="/">HomePage</a></p>
+<h1 width:100%>List of All Blogs</h1>
+
+    
+
+    {% for u in data%}
+    <h2>{{u.title}}</h2>
+    <p><i>Written By: </i> {{u.author.name}}<i> Last Updated: </i>{{u.updated_on}}</p>
+    <p>{{u.content}}</p>
+    {%endfor%}
+
+
+</p>
+
+
+</body>
+</html>
